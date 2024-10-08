@@ -23,10 +23,42 @@ A simple and interactive Tic Tac Toe game implemented in HTML, CSS, and JavaScri
 - CSS
 - JavaScript
 
+## Improvements
+
+There are several ways to enhance this game:
+
+- **Enhanced AI Logic**: Implement a minimax algorithm for unbeatable AI.
+- **User Profiles**: Allow players to save their scores and track wins.
+- **Multiplayer Mode**: Enable a two-player mode for local play.
+- **Styling Enhancements**: Improve the UI with animations and effects.
+- **Mobile Responsiveness**: Optimize the design for mobile devices.
+
 ## Contributing
 
-Feel free to fork the repository and submit pull requests for improvements!
+Contributions are welcome! To improve the game, follow these steps:
+
+1. **Fork the repository**: Click on the "Fork" button at the top right of this page.
+2. **Clone your fork**: 
+   ```bash
+   git clone https://github.com/sohamdalwadi/tic-tac-toe.git
+   ```
+3. **Create a new branch**: 
+   ```bash
+   git checkout -b your-feature-branch
+   ```
+4. **Make your changes**: Edit the files as needed.
+5. **Commit your changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+6. **Push to your fork**: 
+   ```bash
+   git push origin your-feature-branch
+   ```
+7. **Create a Pull Request**: Go to the original repository and click on "Pull requests." Then click on "New pull request" and follow the instructions.
 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+Feel free to modify this README further if needed! Let me know if there's anything else you need help with!
