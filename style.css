@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+body.light {
+    background-color: white; /* Light theme background */
+    color: black; /* Dark text for light theme */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger size for the icon */
+    position: absolute; /* Position it at the top right */
+    top: 20px;
+    right: 20px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto; /* Center the game board */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell.light {
+    background-color: #f0f0f0; /* Light cell background */
+    color: black; /* Dark text */
+}
+
+.cell:hover {
+    background-color: #444;
+}
+
+.cell.thinking {
+    background-color: #666; /* Gray color to indicate AI is thinking */
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+.winning-cell {
+    background-color: #28a745; /* Highlight winning cells */
+}
+
+.winning-cell.light {
+    background-color: #90ee90; /* Light green highlight */
+}
+
+#winnerDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+#winnerDisplay.visible {
+    opacity: 1;
+}
+
+#restartButton {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#restartButton:hover {
+    background-color: black;
+    color: white;
+}
